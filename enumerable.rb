@@ -1,10 +1,13 @@
 module MyEnumerable
-    def all(arr)
-        #all , any,comparsion
-    end
-    
-    def any(arr)
-    end
-    def filter(arr)
-    end
+  def all?
+    @list.all? { |element| return true if yield(element) }
+  end
+
+  def any?(&)
+    @list.any?(&)
+  end
+
+  def filter(&)
+    @list.filter(&)
+  end
 end

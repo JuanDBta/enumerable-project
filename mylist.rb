@@ -1,10 +1,17 @@
-require_relative 'enumerable' 
+require_relative 'enumerable'
 
 class MyList
-    @list
-    include MyEnumerable
-     def mylist_method
-        all(@list)
-     end
+  include MyEnumerable
 
+  def initialize(*list)
+    @list = list
+  end
+
+  def each(&)
+    @list.each(&)
+  end
 end
+
+list = MyList.new(1, 2, 3, 4)
+puts(list.all? { |e| e < 5 })
+puts(list.all? { |e| e > 5 })
