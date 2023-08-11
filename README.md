@@ -57,9 +57,10 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Add ]**
+- **[Add mylist.rb]**
+- **[Add enumerable.rb ]**
 - **[Install linters]**
-- **[Add ]**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
