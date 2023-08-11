@@ -10,6 +10,8 @@ module MyEnumerable
   end
 
   def filter
-    @list.filter
+    filtered_list = []
+    @list.filter { |element| filtered_list << element if yield(element) }
+    filtered_list.inspect
   end
 end
